@@ -9,41 +9,64 @@
 <body>
     <header>
         <h2>Poznaj smoki!</h2>
-        <div id="blok_nawigacyjny">
-            <section onclick="()">Baza</section>
-            <section onclick="()">Opisy</section>
-            <section onclick="()">Galeria</section>
-        </div>
-        <main>
-            <section id="sekcja_1">
-                <h3>Baza Smoków</h3>
-                <form action="smoki.php" method="post">
-                    <select name="" id="">
-                        <!--Lista rozwijana wypełniona przez skrypt 1-->
-                        <button>Szukaj</button> <!--Przycisk „Szukaj”, wysyłający dane z formularza do skryptu 2-->
-                    </select>
-                    <tr>
-                        <th>Nazwa</th>
-                        <td>Długość</td>
-                        <td>Szerokość</td>
-                    </tr>
-                    <tr>
-                        <th>Nazwa</th>
-                        <td>Długość</td>
-                        <td>Szerokość</td>
-                    </tr>
-                    <tr>
-                        <th>Nazwa</th>
-                        <td>Długość</td>
-                        <td>Szerokość</td>
-                    </tr>
-                </form>
-            </section>
-            <section id="sekcja_2">
-                <h3>Opisy smoków</h3>
-            </section>
-            <section id="sekcja_2"></section>
-        </main>
     </header>
+
+    <nav>
+        <!-- W bloku 1 kod JS do zrobienia -->
+        <article id="blok1" onclick="">Baza</article>
+        <article onclick="">Opisy</article>
+        <article onclick="">Galeria</article>
+    </nav>
+
+    <main>
+        <!-- Sekcja pierwsza -->
+        <section id="sekcja1">
+            <h3>Baza Smoków</h3>
+            <!-- Zmienić na smoki.php -->
+            <form action="smoki.html" method="post">
+                <select>
+                    <!-- Wypełniony select przez skrypt 1 -->
+                </select>
+                <button type="submit">Szukaj</button>
+                <!-- <input type="submit" value="Szukaj"> -->
+            </form>
+
+            <table>
+                <tr>
+                    <th>Nazwa</th>
+                    <th>Długość</th>
+                    <th>Szerokość</th>
+                </tr>
+                <!-- Wypełniona tabela przez skrypt 2 -->
+            </table>
+        </section>
+        <!-- Sekcja druga -->
+        <section id="sekcja2">
+            <h3>Opisy smoków</h3>
+            <dl>
+                <dt>Smok czerwony</dt>
+                <dd>Pochodzi z Chin. Ma 1000 lat. Żywi się mniejszymi zwierzętami. Posiada łuski cenne na rynkach wschodnich do wyrabiania lekarstw. Jest dziki i groźny.</dd>
+
+                <dt>Smok zielony</dt>
+                <dd>Pochodzi z Bułgarii. Ma 10000 lat. Żywi się mniejszymi zwierzętami, ale tylko w kolorze zielonym. Jest kosmaty. Z sierści zgubionej przez niego, tka się najdroższe materiały.</dd>
+
+                <dt>Smok niebieski></dt>
+                <dd>Pochodzi z Francji. Ma 100 lat. Żywi się owocami morza. Jest natchnieniem dla najlepszych malarzy. Często im pozuje. Smok ten jest przyjacielem ludzi i czasami im pomaga. Jest jednak próżny i nie lubi się przepracowywać.</dd>
+            </dl>
+        </section>
+        <!-- Sekcja trzecia -->
+        <section id="sekcja3">
+            <h3>Galeria</h3>
+            <img src="smok1.JPG" alt="Smok czerwony">
+            <img src="smok2.JPG" alt="Smok wielki">
+            <img src="smok3.JPG" alt="Skrzydlaty łaciaty">
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Stronę opracował: 00000000000
+        </p>
+    </footer>
 </body>
 </html>
